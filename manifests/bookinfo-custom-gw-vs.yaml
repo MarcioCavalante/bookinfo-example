@@ -39,3 +39,11 @@ spec:
         host: productpage
         port:
           number: 9080
+  - match:
+    - uri:
+        prefix: /v1
+    route:
+    - destination:
+        host: mlapp
+        port:
+          number: 8080
